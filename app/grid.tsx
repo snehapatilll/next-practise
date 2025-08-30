@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './page.css';
 
-const page = () => {
+const Page = () => {
     const [activeCard,setActiveCard] =useState(null)
     // const arrayContent=[`1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aut, blanditiis inventore minima magni eum odio itaque deserunt nam quisquam error sit aspernatur eius quaerat asperiores corporis quod? Beatae?
     //         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque tempora eveniet esse sit est! Nam laborum veritatis, non tempore perferendis assumenda enim quod obcaecati eius dolorem omnis provident repellendus voluptatum.
@@ -72,4 +72,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

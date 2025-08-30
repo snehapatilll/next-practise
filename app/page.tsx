@@ -1,5 +1,3 @@
-import Image from "next/image";
-import img from '../public/prod-image.jpeg';
 import './page.css';
 const page = () => {
     
