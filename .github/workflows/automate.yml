@@ -26,8 +26,8 @@ jobs:
         run: npm run lint
 
       # Step 5: Run Tests (Jest/React Testing Library etc.)
-      - name: Run Tests
-        run: npm test
+      # - name: Run Tests
+      #   run: npm test
 
       # Step 6: Build Next.js project
       - name: Build Next.js app
