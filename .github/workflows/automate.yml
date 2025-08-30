@@ -1,10 +1,35 @@
 name: CI Pipeline
-on: [push]
+
+on: [push]   # Trigger when code is pushed
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Checkout repository
       - name: Checkout code
         uses: actions/checkout@v3
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18   # Next.js works well with Node 18
+
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
+
+      # Step 4: Run ESLint (linter)
+      - name: Run Linter
+        run: npm run lint
+
+      # Step 5: Run Tests (Jest/React Testing Library etc.)
+      - name: Run Tests
+        run: npm test
+
+      # Step 6: Build Next.js project
+      - name: Build Next.js app
+        run: npm run build
+
