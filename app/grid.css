@@ -1,0 +1,45 @@
+.grid-con{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+   
+}
+.grid-item{
+    background-color: antiquewhite;
+    min-width:200px;
+    min-height: 300px;
+    padding: 20px;
+}
+.active{
+    background-color: aqua;
+}
+@media screen and (max-width: 768px){
+.grid-con{
+ grid-template-columns: repeat(2,1fr)
+}
+
+}
+    
+    /* // <div className='grid-con'>
+    //     <div className='grid-item'>1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aut, blanditiis inventore minima magni eum odio itaque deserunt nam quisquam error sit aspernatur eius quaerat asperiores corporis quod? Beatae?
+    //         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque tempora eveniet esse sit est! Nam laborum veritatis, non tempore perferendis assumenda enim quod obcaecati eius dolorem omnis provident repellendus voluptatum.
+    //         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos unde a, labore ducimus blanditiis quae at minus ea laboriosam et fugit, minima voluptatem. Tempore, dicta aspernatur ipsum pariatur reprehenderit eligendi!
+    //     </div>
+    //     <div className='grid-item'>2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sint nesciunt quaerat fugit velit suscipit consequatur nihil dicta ipsam dolorum, esse culpa delectus voluptate doloribus unde cumque perferendis assumenda!</div>
+    //     <div className='grid-item'>3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi saepe voluptatibus consectetur tempora nesciunt iusto atque in inventore repellendus magni. Beatae possimus sapiente dolores asperiores dolor. Molestiae aperiam excepturi iure?</div>
+    //     <div className='grid-item'>4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas dolorem doloremque, explicabo doloribus vero praesentium numquam laudantium soluta corporis illo fugit unde dolore optio et nobis deserunt delectus illum.</div>
+    //     <div className='grid-item'>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium sequi, ut iste labore dolorum explicabo? Natus provident eaque eveniet animi, dolore alias saepe, iste voluptate delectus facilis incidunt asperiores?</div>
+    //     <div className='grid-item'>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam obcaecati blanditiis autem nesciunt quam, id doloremque accusantium dolorum vitae dicta sunt quibusdam soluta. Asperiores quis voluptatem velit laudantium veniam?</div>
+       
+    // </div> */
+
+/* 
+       {/* {activeCard !== null  && (
+           
+            <div>
+                <div>active card : {activeCard}</div>
+                 <div>dyanamic content on card click {arrayContent[activeCard]} </div>
+                 <button onClick={() => setActiveCard(null)}>close</button>
+
+            </div>
+        )} */

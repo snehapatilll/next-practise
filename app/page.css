@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.product-con{
+    display: flex;
+    flex-direction: column;
+}
+.product-con > :nth-child(1){
+    order:3;
+}
+/* .product-con > :nth-child(2){
+    order:1;
+} */
+.product-con > :nth-child(3){
+    background-color: green;
+}
